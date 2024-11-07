@@ -8,22 +8,20 @@ import Hero from "./components/Hero";
 
 const App: FC = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
 
-      <main className="pt-16">
-        {" "}
-        {/* pt-16 para compensar la altura del header fijo */}
+      <main className="flex-1">
         {/* Sección Inicio */}
-        <section id="inicio">
-          {" "}
-          {/* Removidos los estilos adicionales */}
+        <section id="inicio" className="h-screen">
           <Hero />
         </section>
+
         {/* Sección Servicios */}
-        <section id="servicios">
+        <section id="servicios" className="min-h-screen">
           <Services />
         </section>
+
         {/* Sección Galería */}
         <section id="galeria" className="min-h-screen bg-gray-50">
           <div className="container mx-auto px-4 py-20">
@@ -31,8 +29,9 @@ const App: FC = () => {
             <Gallery />
           </div>
         </section>
+
         {/* Sección Contacto */}
-        <section id="contacto" >
+        <section id="contacto">
           <Contact />
         </section>
       </main>
