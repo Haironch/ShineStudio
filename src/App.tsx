@@ -21,13 +21,8 @@ const App: FC = () => {
           <Hero />
         </section>
         {/* Sección Servicios */}
-        <section id="servicios" className="min-h-screen bg-white">
-          <div className="container mx-auto px-4 py-20">
-            <h2 className="text-3xl font-bold text-center">
-              Nuestros Servicios
-            </h2>
-            <Services />
-          </div>
+        <section id="servicios">
+          <Services />
         </section>
         {/* Sección Galería */}
         <section id="galeria" className="min-h-screen bg-gray-50">
@@ -37,11 +32,8 @@ const App: FC = () => {
           </div>
         </section>
         {/* Sección Contacto */}
-        <section id="contacto" className="min-h-screen bg-white">
-          <div className="container mx-auto px-4 py-20">
-            <h2 className="text-3xl font-bold text-center">Contacto</h2>
-            <Contact />
-          </div>
+        <section id="contacto" >
+          <Contact />
         </section>
       </main>
 
