@@ -31,7 +31,7 @@ const App: FC = () => {
         </section>
 
         {/* Sección Contacto */}
-        <section id="contacto">
+        <section id="contacto" className="min-h-screen">
           <Contact />
         </section>
       </main>

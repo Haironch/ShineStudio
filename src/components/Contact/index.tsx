@@ -36,7 +36,7 @@ const Contact: FC = () => {
   ];
 
   return (
-    <div className="relative min-h-[600px] w-full bg-[url('/bg-beauty.jpg')] bg-cover bg-center py-12">
+    <div className="relative min-h-[calc(100vh-80px)] w-full bg-[url('/bg-beauty.jpg')] bg-cover bg-center py-20">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/70" />
 
