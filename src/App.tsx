@@ -23,11 +23,8 @@ const App: FC = () => {
         </section>
 
         {/* Sección Galería */}
-        <section id="galeria" className="min-h-screen bg-gray-50">
-          <div className="container mx-auto px-4 py-20">
-            <h2 className="text-3xl font-bold text-center">Galería</h2>
+        <section id="galeria" className="min-h-screen">
             <Gallery />
-          </div>
         </section>
 
         {/* Sección Contacto */}
