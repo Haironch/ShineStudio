@@ -1,3 +1,4 @@
+
 const services = [
   "Extensiones de pestañas",
   "Lifting & Rizado de pestañas",
@@ -30,30 +31,29 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-screen -mt-16">
-      {" "}
-      {/* Ajustamos aquí */}
+    <div className="relative w-full min-h-screen pt-20"> {/* Cambiamos height-screen por min-h-screen y removimos -mt-16 */}
       {/* Background con overlay */}
       <div className="absolute inset-0 bg-[url('/bg-beauty.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50" />
       </div>
+      
       {/* Contenido Principal */}
-      <div className="relative h-full flex flex-col items-center justify-center px-4 text-center text-white pt-16">
-        {" "}
-        {/* Agregamos pt-16 */}
+      <div className="relative h-full flex flex-col items-center justify-center px-4 text-center text-white">
         {/* Logo o Marca */}
-        <div className="mb-6">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
+        <div className="mb-6 pt-8 md:pt-0"> {/* Añadimos padding top solo en móvil */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
             Shine Studio
           </h1>
           <div className="w-24 h-1 mx-auto bg-pink-500 rounded-full mb-6" />
         </div>
+        
         {/* Descripción */}
-        <p className="max-w-2xl text-base md:text-lg lg:text-xl mb-8 leading-relaxed">
+        <p className="max-w-2xl text-sm md:text-lg lg:text-xl mb-8 leading-relaxed">
           Somos un salón dedicado a las extensiones de pestañas a nivel nacional
           de Guatemala con altos estándares profesionales atendiendo eventos y
           clientas.
         </p>
+        
         {/* Botones de Acción */}
         <div className="flex flex-col sm:flex-row gap-4 mb-12">
           <a
@@ -71,8 +71,9 @@ const Hero = () => {
             Nuestros servicios
           </a>
         </div>
+        
         {/* Servicios Preview */}
-        <div className="max-w-4xl w-full">
+        <div className="max-w-4xl w-full mb-16"> {/* Añadimos margin bottom */}
           <h3 className="text-lg mb-4 font-semibold">Nuestros Servicios</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 px-4">
             {services.map((service, index) => (
@@ -86,6 +87,7 @@ const Hero = () => {
             ))}
           </div>
         </div>
+        
         {/* Scroll Indicator */}
         <button
           onClick={scrollToServices}
